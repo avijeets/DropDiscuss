@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		35646C649E1CBB1D312FCF00 /* Pods_DropDiscussTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D975AC5A95AE8E9C6B569E /* Pods_DropDiscussTests.framework */; };
+		8A49265F227BFA6000CD0995 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A49265E227BFA6000CD0995 /* AuthViewController.swift */; };
+		8A492661227BFAB300CD0995 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A492660227BFAB300CD0995 /* LoginViewController.swift */; };
+		8A492663227BFAF800CD0995 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A492662227BFAF800CD0995 /* InsetTextField.swift */; };
+		8A492665227C00AC00CD0995 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A492664227C00AC00CD0995 /* ShadowView.swift */; };
+		8A492667227D48DD00CD0995 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A492666227D48DD00CD0995 /* AuthService.swift */; };
 		8AAAF850227940CE00346627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAAF84F227940CE00346627 /* AppDelegate.swift */; };
 		8AAAF852227940CE00346627 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAAF851227940CE00346627 /* FirstViewController.swift */; };
 		8AAAF854227940CE00346627 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAAF853227940CE00346627 /* SecondViewController.swift */; };
@@ -32,6 +37,11 @@
 
 /* Begin PBXFileReference section */
 		1AD2E0A31ACDC497F60F42DE /* Pods_DropDiscuss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropDiscuss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A49265E227BFA6000CD0995 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		8A492660227BFAB300CD0995 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8A492662227BFAF800CD0995 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		8A492664227C00AC00CD0995 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		8A492666227D48DD00CD0995 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		8AAAF84C227940CE00346627 /* DropDiscuss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropDiscuss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAAF84F227940CE00346627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AAAF851227940CE00346627 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -104,11 +114,11 @@
 		8AAAF84E227940CE00346627 /* DropDiscuss */ = {
 			isa = PBXGroup;
 			children = (
+				8AAAF84F227940CE00346627 /* AppDelegate.swift */,
 				8AAAF8782279469B00346627 /* Services */,
 				8AAAF8752279419B00346627 /* Extensions */,
 				8AAAF8742279418C00346627 /* View */,
 				8AAAF8732279418700346627 /* Model */,
-				8AAAF84F227940CE00346627 /* AppDelegate.swift */,
 				8AAAF8722279416100346627 /* Controllers */,
 				8AAAF855227940CE00346627 /* Main.storyboard */,
 				8AAAF858227940D000346627 /* Assets.xcassets */,
@@ -131,6 +141,8 @@
 		8AAAF8722279416100346627 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8A49265E227BFA6000CD0995 /* AuthViewController.swift */,
+				8A492660227BFAB300CD0995 /* LoginViewController.swift */,
 				8AAAF851227940CE00346627 /* FirstViewController.swift */,
 				8AAAF853227940CE00346627 /* SecondViewController.swift */,
 			);
@@ -147,6 +159,8 @@
 		8AAAF8742279418C00346627 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8A492662227BFAF800CD0995 /* InsetTextField.swift */,
+				8A492664227C00AC00CD0995 /* ShadowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				8AAAF8792279474000346627 /* DataService.swift */,
+				8A492666227D48DD00CD0995 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -357,9 +372,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A492661227BFAB300CD0995 /* LoginViewController.swift in Sources */,
 				8AAAF854227940CE00346627 /* SecondViewController.swift in Sources */,
 				8AAAF850227940CE00346627 /* AppDelegate.swift in Sources */,
+				8A492667227D48DD00CD0995 /* AuthService.swift in Sources */,
+				8A49265F227BFA6000CD0995 /* AuthViewController.swift in Sources */,
+				8A492665227C00AC00CD0995 /* ShadowView.swift in Sources */,
 				8AAAF852227940CE00346627 /* FirstViewController.swift in Sources */,
+				8A492663227BFAF800CD0995 /* InsetTextField.swift in Sources */,
 				8AAAF87A2279474000346627 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,6 @@
+framework module Pods_DropDiscuss {
+  umbrella header "Pods-DropDiscuss-umbrella.h"
+
+  export *
+  module * { export * }
+}
