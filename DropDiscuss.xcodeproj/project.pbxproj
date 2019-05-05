@@ -14,8 +14,8 @@
 		8A492665227C00AC00CD0995 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A492664227C00AC00CD0995 /* ShadowView.swift */; };
 		8A492667227D48DD00CD0995 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A492666227D48DD00CD0995 /* AuthService.swift */; };
 		8AAAF850227940CE00346627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAAF84F227940CE00346627 /* AppDelegate.swift */; };
-		8AAAF852227940CE00346627 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAAF851227940CE00346627 /* FirstViewController.swift */; };
-		8AAAF854227940CE00346627 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAAF853227940CE00346627 /* SecondViewController.swift */; };
+		8AAAF852227940CE00346627 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAAF851227940CE00346627 /* FeedViewController.swift */; };
+		8AAAF854227940CE00346627 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAAF853227940CE00346627 /* GroupsViewController.swift */; };
 		8AAAF857227940CE00346627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AAAF855227940CE00346627 /* Main.storyboard */; };
 		8AAAF859227940D000346627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AAAF858227940D000346627 /* Assets.xcassets */; };
 		8AAAF85C227940D000346627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AAAF85A227940D000346627 /* LaunchScreen.storyboard */; };
@@ -44,8 +44,8 @@
 		8A492666227D48DD00CD0995 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		8AAAF84C227940CE00346627 /* DropDiscuss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropDiscuss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAAF84F227940CE00346627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8AAAF851227940CE00346627 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		8AAAF853227940CE00346627 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		8AAAF851227940CE00346627 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		8AAAF853227940CE00346627 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		8AAAF856227940CE00346627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AAAF858227940D000346627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AAAF85B227940D000346627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -143,8 +143,8 @@
 			children = (
 				8A49265E227BFA6000CD0995 /* AuthViewController.swift */,
 				8A492660227BFAB300CD0995 /* LoginViewController.swift */,
-				8AAAF851227940CE00346627 /* FirstViewController.swift */,
-				8AAAF853227940CE00346627 /* SecondViewController.swift */,
+				8AAAF851227940CE00346627 /* FeedViewController.swift */,
+				8AAAF853227940CE00346627 /* GroupsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -373,12 +373,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A492661227BFAB300CD0995 /* LoginViewController.swift in Sources */,
-				8AAAF854227940CE00346627 /* SecondViewController.swift in Sources */,
+				8AAAF854227940CE00346627 /* GroupsViewController.swift in Sources */,
 				8AAAF850227940CE00346627 /* AppDelegate.swift in Sources */,
 				8A492667227D48DD00CD0995 /* AuthService.swift in Sources */,
 				8A49265F227BFA6000CD0995 /* AuthViewController.swift in Sources */,
 				8A492665227C00AC00CD0995 /* ShadowView.swift in Sources */,
-				8AAAF852227940CE00346627 /* FirstViewController.swift in Sources */,
+				8AAAF852227940CE00346627 /* FeedViewController.swift in Sources */,
 				8A492663227BFAF800CD0995 /* InsetTextField.swift in Sources */,
 				8AAAF87A2279474000346627 /* DataService.swift in Sources */,
 			);
