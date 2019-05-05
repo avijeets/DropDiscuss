@@ -18,6 +18,7 @@ class ComposeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         composeMessage.delegate = self
+        composeSubmitButton.bindToKeyboard()
         // Do any additional setup after loading the view.
     }
     @IBAction func composeCloseButton(_ sender: Any) {

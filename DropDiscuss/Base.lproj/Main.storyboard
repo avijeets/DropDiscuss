@@ -128,7 +128,7 @@
                                     <constraint firstItem="XLl-oY-lbs" firstAttribute="centerY" secondItem="6Ks-83-4SC" secondAttribute="centerY" id="zPZ-gz-8kL"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="stb-I2-xws">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="stb-I2-xws">
                                 <rect key="frame" x="20" y="110" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="ZFX-b2-eb4"/>
@@ -186,7 +186,6 @@
                     </view>
                     <connections>
                         <outlet property="composeEmail" destination="Iit-gv-QN3" id="ONT-Sl-d30"/>
-                        <outlet property="composeEmailSubmit" destination="Pba-eC-Rgv" id="taN-rp-gRc"/>
                         <outlet property="composeMessage" destination="zfy-ex-igZ" id="G2E-uk-fCW"/>
                         <outlet property="composeProfileImage" destination="stb-I2-xws" id="nWf-p4-iXZ"/>
                         <outlet property="composeSubmitButton" destination="Pba-eC-Rgv" id="PXH-3p-n2i"/>
