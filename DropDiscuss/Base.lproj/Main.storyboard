@@ -56,13 +56,56 @@
                                 <rect key="frame" x="0.0" y="90" width="375" height="528"/>
                                 <color key="backgroundColor" red="0.30980392159999998" green="0.3294117647" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="Yiw-kT-BJg">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="Yiw-kT-BJg" customClass="FeedTableViewCell" customModule="DropDiscuss" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yiw-kT-BJg" id="CZb-rt-WZd">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="2SC-KK-BXn">
+                                                    <rect key="frame" x="25" y="21" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="LHB-uh-pP3"/>
+                                                        <constraint firstAttribute="height" constant="50" id="tx2-tf-DOi"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="P5K-RT-Ddp">
+                                                    <rect key="frame" x="85" y="21" width="265" height="58"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@DropDiscuss.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lun-KU-3hT">
+                                                            <rect key="frame" x="0.0" y="0.0" width="265" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="fdv-qw-gV7"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="q6k-41-unv">
+                                                            <rect key="frame" x="0.0" y="26" width="265" height="32"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="P5K-RT-Ddp" firstAttribute="top" secondItem="CZb-rt-WZd" secondAttribute="topMargin" constant="10" id="5WI-gJ-kyl"/>
+                                                <constraint firstItem="2SC-KK-BXn" firstAttribute="leading" secondItem="CZb-rt-WZd" secondAttribute="leadingMargin" constant="10" id="Nw2-Kb-gMS"/>
+                                                <constraint firstItem="P5K-RT-Ddp" firstAttribute="leading" secondItem="2SC-KK-BXn" secondAttribute="trailing" constant="10" id="Sm5-vN-nBr"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="P5K-RT-Ddp" secondAttribute="trailing" constant="10" id="px8-OT-xJW"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="P5K-RT-Ddp" secondAttribute="bottom" constant="10" id="tVn-dA-oGh"/>
+                                                <constraint firstItem="2SC-KK-BXn" firstAttribute="top" secondItem="CZb-rt-WZd" secondAttribute="topMargin" constant="10" id="tvt-hh-7Jn"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="email" destination="Lun-KU-3hT" id="kPM-Rc-crk"/>
+                                            <outlet property="messageContent" destination="q6k-41-unv" id="WcM-uJ-dVT"/>
+                                            <outlet property="profileImage" destination="2SC-KK-BXn" id="6XJ-nU-jey"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -80,6 +123,11 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="feed-tabIcon" selectedImage="feed-tabIcon" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="feedContentLabel" destination="q6k-41-unv" id="Eue-0x-lsr"/>
+                        <outlet property="feedEmail" destination="Lun-KU-3hT" id="kZU-dq-NZz"/>
+                        <outlet property="feedProfileImage" destination="2SC-KK-BXn" id="vNY-ml-1ej"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -618,6 +666,6 @@
         <image name="send" width="29" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="H1H-W3-mTn"/>
+        <segue reference="DWG-lD-RQt"/>
     </inferredMetricsTieBreakers>
 </document>
