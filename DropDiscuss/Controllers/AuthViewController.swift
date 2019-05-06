@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class AuthViewController: UIViewController {
 
@@ -14,6 +15,14 @@ class AuthViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if Auth.auth().currentUser != nil {
+            dismiss(animated: true, completion: nil)
+        }
     }
     
     @IBAction func signInWithEmailButtonPressed(_ sender: Any) {
