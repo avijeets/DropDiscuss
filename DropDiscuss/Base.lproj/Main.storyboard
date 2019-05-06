@@ -104,7 +104,7 @@
                                         <connections>
                                             <outlet property="email" destination="Lun-KU-3hT" id="kPM-Rc-crk"/>
                                             <outlet property="messageContent" destination="q6k-41-unv" id="WcM-uJ-dVT"/>
-                                            <outlet property="profileImage" destination="2SC-KK-BXn" id="6XJ-nU-jey"/>
+                                            <outlet property="profileImage" destination="2SC-KK-BXn" id="BjH-RD-T4i"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -124,9 +124,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="feed-tabIcon" selectedImage="feed-tabIcon" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="feedContentLabel" destination="q6k-41-unv" id="Eue-0x-lsr"/>
-                        <outlet property="feedEmail" destination="Lun-KU-3hT" id="kZU-dq-NZz"/>
-                        <outlet property="feedProfileImage" destination="2SC-KK-BXn" id="vNY-ml-1ej"/>
                         <outlet property="feedTableView" destination="45c-4j-meU" id="fry-LW-okq"/>
                     </connections>
                 </viewController>
