@@ -21,6 +21,12 @@ class ComposeViewController: UIViewController {
         composeSubmitButton.bindToKeyboard()
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.composeEmail.text = Auth.auth().currentUser?.email
+    }
+    
     @IBAction func composeCloseButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

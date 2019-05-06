@@ -17,9 +17,13 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.profileName.text = Auth.auth().currentUser?.email
+    }
+    
     @IBAction func signOutPressed(_ sender: Any) {
         let logoutPopup = UIAlertController(title: "Log out?", message: "Are you sure you want to log out?", preferredStyle: .actionSheet)
         let logoutAction = UIAlertAction(title: "Log out?", style: .destructive) { (button) in
