@@ -56,7 +56,7 @@
                                 <rect key="frame" x="0.0" y="90" width="375" height="528"/>
                                 <color key="backgroundColor" red="0.30980392159999998" green="0.3294117647" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="Yiw-kT-BJg" customClass="FeedTableViewCell" customModule="DropDiscuss" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedCell" rowHeight="100" id="Yiw-kT-BJg" customClass="FeedTableViewCell" customModule="DropDiscuss" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yiw-kT-BJg" id="CZb-rt-WZd">
@@ -127,6 +127,7 @@
                         <outlet property="feedContentLabel" destination="q6k-41-unv" id="Eue-0x-lsr"/>
                         <outlet property="feedEmail" destination="Lun-KU-3hT" id="kZU-dq-NZz"/>
                         <outlet property="feedProfileImage" destination="2SC-KK-BXn" id="vNY-ml-1ej"/>
+                        <outlet property="feedTableView" destination="45c-4j-meU" id="fry-LW-okq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		35646C649E1CBB1D312FCF00 /* Pods_DropDiscussTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D975AC5A95AE8E9C6B569E /* Pods_DropDiscussTests.framework */; };
+		8A0F0559227FB95A00CAF04F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0F0558227FB95A00CAF04F /* Message.swift */; };
 		8A49265F227BFA6000CD0995 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A49265E227BFA6000CD0995 /* AuthViewController.swift */; };
 		8A492661227BFAB300CD0995 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A492660227BFAB300CD0995 /* LoginViewController.swift */; };
 		8A492663227BFAF800CD0995 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A492662227BFAF800CD0995 /* InsetTextField.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		1AD2E0A31ACDC497F60F42DE /* Pods_DropDiscuss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropDiscuss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0F0558227FB95A00CAF04F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		8A49265E227BFA6000CD0995 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		8A492660227BFAB300CD0995 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8A492662227BFAF800CD0995 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		8AAAF8732279418700346627 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8A0F0558227FB95A00CAF04F /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				8AAAF852227940CE00346627 /* FeedViewController.swift in Sources */,
 				8A492663227BFAF800CD0995 /* InsetTextField.swift in Sources */,
 				8AAAF87A2279474000346627 /* DataService.swift in Sources */,
+				8A0F0559227FB95A00CAF04F /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
