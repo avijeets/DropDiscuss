@@ -414,7 +414,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4q-Hj-Qx0">
-                                        <rect key="frame" x="8" y="30" width="21" height="30"/>
+                                        <rect key="frame" x="15" y="30" width="21" height="30"/>
                                         <state key="normal" image="close"/>
                                         <connections>
                                             <action selector="closeButtonPressed:" destination="DQN-Du-WY8" eventType="touchUpInside" id="7VU-0o-Dz6"/>
@@ -430,7 +430,7 @@
                                     <constraint firstItem="QCk-wY-hvg" firstAttribute="centerY" secondItem="5lu-Z6-msI" secondAttribute="centerY" id="N7H-q1-cL1"/>
                                     <constraint firstItem="E4q-Hj-Qx0" firstAttribute="top" secondItem="hIj-RS-qwZ" secondAttribute="top" constant="30" id="WUQ-s6-qyQ"/>
                                     <constraint firstItem="QCk-wY-hvg" firstAttribute="top" secondItem="hIj-RS-qwZ" secondAttribute="top" constant="30" id="XcM-Vh-A2a"/>
-                                    <constraint firstItem="E4q-Hj-Qx0" firstAttribute="leading" secondItem="hIj-RS-qwZ" secondAttribute="leading" constant="8" id="YGQ-Lu-Os9"/>
+                                    <constraint firstItem="E4q-Hj-Qx0" firstAttribute="leading" secondItem="hIj-RS-qwZ" secondAttribute="leading" constant="15" id="YGQ-Lu-Os9"/>
                                     <constraint firstItem="5lu-Z6-msI" firstAttribute="centerX" secondItem="hIj-RS-qwZ" secondAttribute="centerX" id="ogS-yw-U7Q"/>
                                 </constraints>
                             </view>

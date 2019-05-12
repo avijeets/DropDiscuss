@@ -10,6 +10,7 @@ target 'DropDiscuss' do
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
 
+
   target 'DropDiscussTests' do
     inherit! :search_paths
     # Pods for testing
