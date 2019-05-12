@@ -17,6 +17,7 @@ class FeedViewController: UIViewController {
         
         feedTableView.delegate = self
         feedTableView.dataSource = self
+        feedTableView.backgroundColor = UIColor(hex: "#4F5462")
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -44,7 +45,7 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
         let message = messageArray[indexPath.row]
         
         DataService.instance.getUsername(forUID: message.senderID) { (returnedUsername) in
-            cell.configureCell(profileImage: image!, email: message.senderID, content: message.content)
+            cell.configureCell(profileImage: image!, email: returnedUsername, content: message.content)
         }
         
         return cell

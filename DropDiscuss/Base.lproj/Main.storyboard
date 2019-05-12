@@ -299,6 +299,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FyV-jR-Lya">
                                 <rect key="frame" x="0.0" y="90" width="375" height="528"/>
                                 <color key="backgroundColor" red="0.30980392159999998" green="0.3294117647" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.19189193839999999" green="0.199896872" blue="0.2082159817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="0lJ-S5-CyU">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
@@ -307,6 +308,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.19189193839999999" green="0.199896872" blue="0.2082159817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -373,7 +375,7 @@
                                         <rect key="frame" x="8" y="30" width="21" height="30"/>
                                         <state key="normal" image="close"/>
                                         <connections>
-                                            <action selector="closeButtonPressed:" destination="DQN-Du-WY8" eventType="touchUpInside" id="ztV-wt-Y6U"/>
+                                            <action selector="closeButtonPressed:" destination="DQN-Du-WY8" eventType="touchUpInside" id="7VU-0o-Dz6"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -405,7 +407,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="Rm8-dO-csN"/>
                                         </constraints>
-                                        <color key="textColor" red="0.077975250780000005" green="0.51707226039999998" blue="0.59711748360000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -421,11 +423,11 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="Q2p-WP-Iej"/>
                                         </constraints>
-                                        <color key="textColor" red="0.077975250780000005" green="0.51707226039999998" blue="0.59711748360000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add people to this group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaR-EP-JZm">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add people to this group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="oaR-EP-JZm">
                                         <rect key="frame" x="0.0" y="151" width="335" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -437,7 +439,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="6xB-97-YHZ"/>
                                         </constraints>
-                                        <color key="textColor" red="0.077975250780000005" green="0.51707226039999998" blue="0.59711748360000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -461,15 +463,14 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeX-Pb-RJn">
-                                                            <rect key="frame" x="79" y="21" width="217" height="21"/>
+                                                            <rect key="frame" x="79" y="21" width="217" height="24"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteCheckmark" translatesAutoresizingMaskIntoConstraints="NO" id="j72-1g-ZTS">
-                                                            <rect key="frame" x="306" y="21" width="24" height="24"/>
+                                                            <rect key="frame" x="306" y="11" width="24" height="44"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="24" id="Cik-2F-1bf"/>
                                                                 <constraint firstAttribute="width" constant="24" id="LVx-Ak-VzT"/>
                                                             </constraints>
                                                         </imageView>
@@ -513,10 +514,10 @@
                         <viewLayoutGuide key="safeArea" id="QiC-7E-fFL"/>
                     </view>
                     <connections>
-                        <outlet property="closeButton" destination="E4q-Hj-Qx0" id="vgs-p8-6et"/>
                         <outlet property="descriptionTextfield" destination="bMm-wq-8eO" id="rTb-3o-35d"/>
+                        <outlet property="doneButton" destination="QCk-wY-hvg" id="S5P-u1-aYh"/>
                         <outlet property="emailSearchTextfield" destination="Dss-gA-reG" id="yWQ-bw-DqB"/>
-                        <outlet property="groupMemberStack" destination="rQk-PC-VQ8" id="c80-dd-9hh"/>
+                        <outlet property="groupMemberLabel" destination="oaR-EP-JZm" id="9oQ-I7-vJW"/>
                         <outlet property="tableView" destination="weP-Pz-ub2" id="aTi-T2-XGj"/>
                         <outlet property="titleTextfield" destination="YkW-Pa-Q04" id="wx7-rc-0K2"/>
                     </connections>

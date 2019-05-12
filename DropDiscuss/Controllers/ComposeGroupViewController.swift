@@ -52,7 +52,23 @@ class ComposeGroupViewController: UIViewController {
     }
     
     @IBAction func doneButtonPressed(_ sender: Any) {
+        if titleTextfield.text != "" && descriptionTextfield.text != "" {
+            DataService.instance.getIDs(forUsernames: chosenUserArray) { (idsArray) in
+                var userIDs = idsArray
+                userIDs.append((Auth.auth().currentUser?.uid)!)
+                
+                DataService.instance.createGroup(withTitle: self.titleTextfield.text!, andDescription: self.descriptionTextfield.text!, forUserIDs: userIDs, handler: { (groupCreated) in
+                    if groupCreated {
+                        self.dismiss(animated: true, completion: nil)
+                    }
+                    else {
+                        print("Group could not be created")
+                    }
+                })
+            }
+        }
     }
+    
     @IBAction func closeButtonPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
