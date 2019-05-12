@@ -10,6 +10,7 @@
 		35646C649E1CBB1D312FCF00 /* Pods_DropDiscussTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D975AC5A95AE8E9C6B569E /* Pods_DropDiscussTests.framework */; };
 		8A0F0559227FB95A00CAF04F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0F0558227FB95A00CAF04F /* Message.swift */; };
 		8A34AAAC2287864400A1790A /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34AAAB2287864400A1790A /* UIColor+Hex.swift */; };
+		8A34AAAE2287E62000A1790A /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34AAAD2287E62000A1790A /* GroupTableViewCell.swift */; };
 		8A3B96C9227FCA5E0074DB56 /* ComposeGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3B96C8227FCA5E0074DB56 /* ComposeGroupViewController.swift */; };
 		8A3B96CB227FCEC10074DB56 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3B96CA227FCEC00074DB56 /* UserTableViewCell.swift */; };
 		8A49265F227BFA6000CD0995 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A49265E227BFA6000CD0995 /* AuthViewController.swift */; };
@@ -47,6 +48,7 @@
 		1AD2E0A31ACDC497F60F42DE /* Pods_DropDiscuss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropDiscuss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0F0558227FB95A00CAF04F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		8A34AAAB2287864400A1790A /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		8A34AAAD2287E62000A1790A /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
 		8A3B96C8227FCA5E0074DB56 /* ComposeGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeGroupViewController.swift; sourceTree = "<group>"; };
 		8A3B96CA227FCEC00074DB56 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		8A49265E227BFA6000CD0995 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				8A492664227C00AC00CD0995 /* ShadowView.swift */,
 				8A49266E227EBBCE00CD0995 /* FeedTableViewCell.swift */,
 				8A3B96CA227FCEC00074DB56 /* UserTableViewCell.swift */,
+				8A34AAAD2287E62000A1790A /* GroupTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				8A492667227D48DD00CD0995 /* AuthService.swift in Sources */,
 				8A49266F227EBBCE00CD0995 /* FeedTableViewCell.swift in Sources */,
 				8A49266D227EB27800CD0995 /* UIView+Keyboard.swift in Sources */,
+				8A34AAAE2287E62000A1790A /* GroupTableViewCell.swift in Sources */,
 				8A49265F227BFA6000CD0995 /* AuthViewController.swift in Sources */,
 				8A49266B227E935E00CD0995 /* ComposeViewController.swift in Sources */,
 				8A3B96C9227FCA5E0074DB56 /* ComposeGroupViewController.swift in Sources */,

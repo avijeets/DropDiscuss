@@ -100,7 +100,7 @@
                                                 <constraint firstItem="2SC-KK-BXn" firstAttribute="top" secondItem="CZb-rt-WZd" secondAttribute="topMargin" constant="10" id="tvt-hh-7Jn"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.19189193839999999" green="0.199896872" blue="0.2082159817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="email" destination="Lun-KU-3hT" id="kPM-Rc-crk"/>
                                             <outlet property="messageContent" destination="q6k-41-unv" id="WcM-uJ-dVT"/>
@@ -301,14 +301,53 @@
                                 <color key="backgroundColor" red="0.30980392159999998" green="0.3294117647" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.19189193839999999" green="0.199896872" blue="0.2082159817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="0lJ-S5-CyU">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupTableViewCell" rowHeight="114" id="0lJ-S5-CyU" customClass="GroupTableViewCell" customModule="DropDiscuss" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="114"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0lJ-S5-CyU" id="64a-mM-ESg">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="113.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Group Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfo-f4-MTC">
+                                                    <rect key="frame" x="15" y="19" width="337" height="22"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IkP-AP-qGc">
+                                                    <rect key="frame" x="20" y="46" width="335" height="43"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Group description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f25-jp-uQe">
+                                                            <rect key="frame" x="0.0" y="0.0" width="335" height="19"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2 members" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kI-rT-SAP">
+                                                            <rect key="frame" x="0.0" y="24" width="335" height="19"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="IkP-AP-qGc" secondAttribute="trailing" constant="20" id="0sU-Mq-6dd"/>
+                                                <constraint firstItem="IkP-AP-qGc" firstAttribute="top" secondItem="Rfo-f4-MTC" secondAttribute="bottom" constant="8" id="H9y-xn-cEI"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Rfo-f4-MTC" secondAttribute="trailing" constant="8" id="NcN-on-42o"/>
+                                                <constraint firstItem="Rfo-f4-MTC" firstAttribute="leading" secondItem="64a-mM-ESg" secondAttribute="leadingMargin" id="WFR-p6-ttn"/>
+                                                <constraint firstItem="IkP-AP-qGc" firstAttribute="leading" secondItem="64a-mM-ESg" secondAttribute="leading" constant="20" id="aTz-oo-7X9"/>
+                                                <constraint firstAttribute="bottom" secondItem="IkP-AP-qGc" secondAttribute="bottom" constant="8" id="e4F-ve-oGP"/>
+                                                <constraint firstItem="Rfo-f4-MTC" firstAttribute="top" secondItem="64a-mM-ESg" secondAttribute="topMargin" constant="8" id="rWN-j7-HnK"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.19189193839999999" green="0.199896872" blue="0.2082159817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="groupDescriptionLabel" destination="f25-jp-uQe" id="31I-GN-2zy"/>
+                                            <outlet property="groupTitleLabel" destination="Rfo-f4-MTC" id="byq-Ar-cnH"/>
+                                            <outlet property="memberCountLabel" destination="4kI-rT-SAP" id="Fsw-87-RCC"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -331,10 +370,13 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Groups" image="groups-tabIcon" selectedImage="groups-tabIcon" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="groupsTableview" destination="FyV-jR-Lya" id="Cjc-Yo-e2O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
         </scene>
         <!--Compose Group View Controller-->
         <scene sceneID="kQk-25-yDM">
