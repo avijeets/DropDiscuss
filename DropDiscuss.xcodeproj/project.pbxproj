@@ -32,6 +32,8 @@
 		8AAAF867227940D000346627 /* DropDiscussTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAAF866227940D000346627 /* DropDiscussTests.swift */; };
 		8AAAF8772279437600346627 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AAAF8762279437500346627 /* GoogleService-Info.plist */; };
 		8AAAF87A2279474000346627 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAAF8792279474000346627 /* DataService.swift */; };
+		8AC76022228915EE00C949EC /* GroupFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC76021228915EE00C949EC /* GroupFeedTableViewCell.swift */; };
+		8AC760242289166500C949EC /* GroupFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC760232289166500C949EC /* GroupFeedViewController.swift */; };
 		EF33C6E473CF091F17AACE85 /* Pods_DropDiscuss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD2E0A31ACDC497F60F42DE /* Pods_DropDiscuss.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +77,8 @@
 		8AAAF868227940D000346627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AAAF8762279437500346627 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8AAAF8792279474000346627 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		8AC76021228915EE00C949EC /* GroupFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedTableViewCell.swift; sourceTree = "<group>"; };
+		8AC760232289166500C949EC /* GroupFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedViewController.swift; sourceTree = "<group>"; };
 		A1D975AC5A95AE8E9C6B569E /* Pods_DropDiscussTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropDiscussTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A237930160AB550084E5A3C0 /* Pods-DropDiscuss.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropDiscuss.release.xcconfig"; path = "Pods/Target Support Files/Pods-DropDiscuss/Pods-DropDiscuss.release.xcconfig"; sourceTree = "<group>"; };
 		AC2EB33AF8AEFC0CFF1487F4 /* Pods-DropDiscussTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropDiscussTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DropDiscussTests/Pods-DropDiscussTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 				8A492668227E87DB00CD0995 /* ProfileViewController.swift */,
 				8A49266A227E935E00CD0995 /* ComposeViewController.swift */,
 				8A3B96C8227FCA5E0074DB56 /* ComposeGroupViewController.swift */,
+				8AC760232289166500C949EC /* GroupFeedViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				8A49266E227EBBCE00CD0995 /* FeedTableViewCell.swift */,
 				8A3B96CA227FCEC00074DB56 /* UserTableViewCell.swift */,
 				8A34AAAD2287E62000A1790A /* GroupTableViewCell.swift */,
+				8AC76021228915EE00C949EC /* GroupFeedTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -405,8 +411,10 @@
 				8A492661227BFAB300CD0995 /* LoginViewController.swift in Sources */,
 				8AAAF854227940CE00346627 /* GroupsViewController.swift in Sources */,
 				8A492669227E87DB00CD0995 /* ProfileViewController.swift in Sources */,
+				8AC76022228915EE00C949EC /* GroupFeedTableViewCell.swift in Sources */,
 				8AAAF850227940CE00346627 /* AppDelegate.swift in Sources */,
 				8A34AAAC2287864400A1790A /* UIColor+Hex.swift in Sources */,
+				8AC760242289166500C949EC /* GroupFeedViewController.swift in Sources */,
 				8A3B96CB227FCEC10074DB56 /* UserTableViewCell.swift in Sources */,
 				8A34AAB02287EC3900A1790A /* Group.swift in Sources */,
 				8A492667227D48DD00CD0995 /* AuthService.swift in Sources */,
