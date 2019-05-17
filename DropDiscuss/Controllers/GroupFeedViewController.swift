@@ -49,7 +49,7 @@ class GroupFeedViewController: UIViewController {
     }
 
     @IBAction func backButtonPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        dismissDetail()
     }
     
     @IBAction func sendButtonPressed(_ sender: Any) {
@@ -69,12 +69,17 @@ class GroupFeedViewController: UIViewController {
 }
 
 extension GroupFeedViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return groupMessages.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "groupFeedCell", for: indexPath) as? GroupFeedTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "GroupFeedCell", for: indexPath) as? GroupFeedTableViewCell else { return UITableViewCell() }
         
         let message = groupMessages[indexPath.row]
         DataService.instance.getUsername(forUID: message.senderID) { (email) in

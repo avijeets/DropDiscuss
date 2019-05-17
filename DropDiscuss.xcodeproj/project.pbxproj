@@ -34,6 +34,7 @@
 		8AAAF87A2279474000346627 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAAF8792279474000346627 /* DataService.swift */; };
 		8AC76022228915EE00C949EC /* GroupFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC76021228915EE00C949EC /* GroupFeedTableViewCell.swift */; };
 		8AC760242289166500C949EC /* GroupFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC760232289166500C949EC /* GroupFeedViewController.swift */; };
+		8AC90FB4228F51D60030ADDC /* UIViewController+Present.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC90FB3228F51D60030ADDC /* UIViewController+Present.swift */; };
 		EF33C6E473CF091F17AACE85 /* Pods_DropDiscuss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD2E0A31ACDC497F60F42DE /* Pods_DropDiscuss.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		8AAAF8792279474000346627 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		8AC76021228915EE00C949EC /* GroupFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedTableViewCell.swift; sourceTree = "<group>"; };
 		8AC760232289166500C949EC /* GroupFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedViewController.swift; sourceTree = "<group>"; };
+		8AC90FB3228F51D60030ADDC /* UIViewController+Present.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Present.swift"; sourceTree = "<group>"; };
 		A1D975AC5A95AE8E9C6B569E /* Pods_DropDiscussTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropDiscussTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A237930160AB550084E5A3C0 /* Pods-DropDiscuss.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropDiscuss.release.xcconfig"; path = "Pods/Target Support Files/Pods-DropDiscuss/Pods-DropDiscuss.release.xcconfig"; sourceTree = "<group>"; };
 		AC2EB33AF8AEFC0CFF1487F4 /* Pods-DropDiscussTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropDiscussTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DropDiscussTests/Pods-DropDiscussTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			children = (
 				8A49266C227EB27800CD0995 /* UIView+Keyboard.swift */,
 				8A34AAAB2287864400A1790A /* UIColor+Hex.swift */,
+				8AC90FB3228F51D60030ADDC /* UIViewController+Present.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				8AC76022228915EE00C949EC /* GroupFeedTableViewCell.swift in Sources */,
 				8AAAF850227940CE00346627 /* AppDelegate.swift in Sources */,
 				8A34AAAC2287864400A1790A /* UIColor+Hex.swift in Sources */,
+				8AC90FB4228F51D60030ADDC /* UIViewController+Present.swift in Sources */,
 				8AC760242289166500C949EC /* GroupFeedViewController.swift in Sources */,
 				8A3B96CB227FCEC10074DB56 /* UserTableViewCell.swift in Sources */,
 				8A34AAB02287EC3900A1790A /* Group.swift in Sources */,
