@@ -22,8 +22,8 @@ Done! Now, run the project by opening `DropDiscuss.xcworkspace` with Xcode and p
 
 ### TODO:
 
-* ~~ Compose group ~~
-* ~~ Group messages ~~
+* ~~Compose group~~
+* ~~Group messages~~
 * Profile images
 * Profile tableview displaying user posts
 * Notifications
