@@ -18,12 +18,20 @@ Install the dependencies
 cd DropDiscuss && pod install
 ```
 
-Done! Now, run the project by opening `DropDiscuss.xcworkspace` with Xcode and press Run.
+Done! Now, run the project by opening `DropDiscuss.xcworkspace` with Xcode and pressing Run.
 
 ### TODO:
+
+Features 
 
 * ~~Compose group~~
 * ~~Group messages~~
 * Profile images
 * Profile tableview displaying user posts
 * Notifications
+
+Bugs 
+
+* Compose a message in group tableview doesn't display
+* Log out cancel action
+* Textview disappears after typing
